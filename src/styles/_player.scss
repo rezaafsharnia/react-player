@@ -1,0 +1,33 @@
+.player-container{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    width: 50%;
+    
+    svg{
+        font-size: 2rem;
+        
+    }
+    button{
+        background: none;
+        padding: 1rem;
+        cursor: pointer;
+        transition: .5s ease-in-out ;
+    }
+    button:hover{
+        scale: 1.2;
+    }
+    .player{
+        width: 100%;
+        display: flex;
+        input{
+            width: 100%;
+        }
+        p{
+            margin: 0rem .8rem;
+        }
+    }
+}
