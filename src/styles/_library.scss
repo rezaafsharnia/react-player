@@ -9,6 +9,7 @@
     border-top-right-radius:.6rem;
     border-bottom-right-radius:.6rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    overflow-y: scroll;
     
     h2{
         color: #374151;
@@ -44,9 +45,34 @@
 }
 
 .Active{
-    background-color: #d1d5db;
+    background:linear-gradient(35deg,#FE5B69,#8364FF);
 }
 
 .nonActive{
     opacity: 100%;
 }
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    overflow: hidden;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background: #f1f1f1;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      border-radius: 7px;
+      background: #c9c9c9;
+    //  background: linear-gradient(35deg,#FE5B69,#8364FF)
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(35deg,#FE5B69,#8364FF)
+  }
