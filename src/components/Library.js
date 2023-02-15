@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { GrClose } from "react-icons/gr";
 import React from "react";
 
 function Library({
@@ -8,6 +9,8 @@ function Library({
   currentSong,
   setIsPlaying,
   isPlaying,
+  setShowLibrary,
+  showLibrary,
 }) {
   const activeHandler = (id) => {
     currentSong.active = false;
@@ -21,6 +24,11 @@ function Library({
     }
   };
 
+const closeLibraryHandler = () => {
+  console.log("first")
+  setShowLibrary(!showLibrary)
+}
+
   return (
     <motion.div
       initial={{ x: -300, opacity: 0 }}
@@ -29,7 +37,12 @@ function Library({
       transition={{ duration: 0.8 }}
       className="library_container"
     >
-      <h2>Library</h2>
+      <div className="library-header">
+        <h2>Library</h2>
+        <button onClick={closeLibraryHandler}>
+          <GrClose />
+        </button>
+      </div>
       {songs.map((song) => {
         return (
           <div

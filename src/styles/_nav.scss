@@ -17,6 +17,7 @@
         border: 2px solid gray;
         padding: 0.8rem 1.2rem;
         transition: .5s ease all;
+        z-index: 20;
     }
     button:hover{
         background: rgb(82, 82, 82);
@@ -24,3 +25,4 @@
         border: none;
     }
 }
+

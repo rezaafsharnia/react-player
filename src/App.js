@@ -23,6 +23,8 @@ function App() {
           setSongs={setSongs}
           setIsPlaying={setIsPlaying}
           isPlaying={isPlaying}
+          setShowLibrary={setShowLibrary}
+          showLibrary={showLibrary}
         />
       )}
       <div

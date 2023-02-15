@@ -61,6 +61,7 @@ function Player({ songs, setIsPlaying, isPlaying, currentSong }) {
         </button>
       </div>
       <audio
+        loop
         autoPlay
         onLoadedMetadata={timeUpdateHandler}
         onTimeUpdate={timeUpdateHandler}
