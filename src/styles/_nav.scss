@@ -26,3 +26,11 @@
     }
 }
 
+@media screen and (max-width:768px) {
+    .nav-container{
+        padding: .5rem .8rem;
+        img{
+            width: 15%;
+        }   
+    }
+}

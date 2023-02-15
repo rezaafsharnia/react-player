@@ -30,3 +30,15 @@
         align-items: center;
     }
 }
+
+@media screen and (max-width:768px) {
+    .song-container{
+        width: 100%;
+        
+        h3{
+            font-size: 1.2rem;
+            margin-bottom: .4rem;
+        }
+        
+    }
+}

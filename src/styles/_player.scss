@@ -32,3 +32,9 @@
         }
     }
 }
+
+@media screen and (max-width:768px) {
+    .player-container{
+        width: 90%;
+    }   
+}
