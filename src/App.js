@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import Library from "./components/Library";
 import Nav from "./components/Nav";
 import Player from "./components/Player";
@@ -11,7 +11,7 @@ function App() {
   const [songs, setSongs] = useState(musics);
   const [showLibrary, setShowLibrary] = useState(false);
   const [currentSong, setCurrentSong] = useState(
-    songs.find((song) => song.active == true)
+    songs.find((song) => song.active === true)
   );
   return (
     <div className="App">
@@ -25,15 +25,21 @@ function App() {
           isPlaying={isPlaying}
         />
       )}
-      <Nav showLibrary={showLibrary} setShowLibrary={setShowLibrary} />
-      <Song currentSong={currentSong} songs={songs} />
-      <Player
-      
-        currentSong={currentSong}
-        isPlaying={isPlaying}
-        setIsPlaying={setIsPlaying}
-        songs={songs}
-      />
+      <div
+        style={{
+          marginLeft: showLibrary ? "250px" : "",
+          transition: ".6s ease All",
+        }}
+      >
+        <Nav showLibrary={showLibrary} setShowLibrary={setShowLibrary} />
+        <Song currentSong={currentSong} songs={songs} />
+        <Player
+          currentSong={currentSong}
+          isPlaying={isPlaying}
+          setIsPlaying={setIsPlaying}
+          songs={songs}
+        />
+      </div>
     </div>
   );
 }

@@ -23,23 +23,23 @@ export const musics = [
     active: false,
   },
   {
-    name: "Darde Shirin",
-    artist: "Aron Afshar",
+    name: "Bekhab Donya",
+    artist: "Mehdi Jahani",
     cover:
-      "https://music-fa.com/wp-content/uploads/2022/04/Aron-Afshar-Music-fa.com_.jpg",
+      "https://upmusics.com/wp-content/uploads/2019/02/jahani.jpg",
     audio:
-      "https://ups.music-fa.com/tagdl/8e401/Aron%20Afshar%20-%20Darde%20Shirin%20(320).mp3",
+      "https://irsv.upmusics.com/Downloads/Musics/Mehdi%20Jahani%20-%20Bekhab%20Donya%20(320).mp3",
     id: uuidv4(),
     color: ["#313131"],
     active: false,
   },
   {
-    name: "Darde Shirin",
-    artist: "Aron Afshar",
+    name: "Kheyli Ghashangi To",
+    artist: "Ahmad Saeedi",
     cover:
-      "https://music-fa.com/wp-content/uploads/2022/04/Aron-Afshar-Music-fa.com_.jpg",
+      "https://upmusics.com/wp-content/uploads/2022/08/Ahmad-Saeedi-Kheyli-Ghashangi-To-1.jpg",
     audio:
-      "https://ups.music-fa.com/tagdl/8e401/Aron%20Afshar%20-%20Darde%20Shirin%20(320).mp3",
+      "https://irsv.upmusics.com/AliBZ/Ahmad%20Saeedi%20%E2%80%93%20Khili%20Ghashngi%20To%20(128).mp3",
     id: uuidv4(),
     color: ["#313131"],
     active: false,
