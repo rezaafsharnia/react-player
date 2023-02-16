@@ -1,4 +1,4 @@
-.library_container{
+.library-container {
     width: 300px;
     left: 0;
     top: 0;
@@ -10,9 +10,15 @@
     border-bottom-right-radius:.6rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     overflow-y: scroll;
-    
-    
+    transition: .5s ease all;
+    opacity: 0;
+    transform: translateX(-100%);
 }
+.show{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
 
 .song-card{
     display: flex;
@@ -48,6 +54,7 @@
 .nonActive{
     opacity: 100%;
 }
+
 
 
 /* width */
@@ -91,7 +98,7 @@
 }
 
 @media screen and (max-width:768px) {
-    .library_container{
+    .library-container{
         width: 100vw;
     }
 }

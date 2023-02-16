@@ -15,21 +15,20 @@ function App() {
   );
   return (
     <div className="App">
-      {showLibrary && (
-        <Library
-          currentSong={currentSong}
-          setCurrentSong={setCurrentSong}
-          songs={songs}
-          setSongs={setSongs}
-          setIsPlaying={setIsPlaying}
-          isPlaying={isPlaying}
-          setShowLibrary={setShowLibrary}
-          showLibrary={showLibrary}
-        />
-      )}
+      <Library
+        currentSong={currentSong}
+        setCurrentSong={setCurrentSong}
+        songs={songs}
+        setSongs={setSongs}
+        setIsPlaying={setIsPlaying}
+        isPlaying={isPlaying}
+        setShowLibrary={setShowLibrary}
+        showLibrary={showLibrary}
+      />
+
       <div
         style={{
-          marginLeft: showLibrary ? "250px" : "",
+          marginLeft: showLibrary ? "250px" : "0px",
           transition: ".6s ease All",
         }}
       >

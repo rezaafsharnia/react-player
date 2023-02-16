@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { GrClose } from "react-icons/gr";
 import React from "react";
 
@@ -24,18 +23,15 @@ function Library({
     }
   };
 
-const closeLibraryHandler = () => {
-  console.log("first")
-  setShowLibrary(!showLibrary)
-}
+  const closeLibraryHandler = () => {
+    console.log("first");
+    setShowLibrary(!showLibrary);
+  };
 
   return (
-    <motion.div
-      initial={{ x: -300, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.8 }}
-      className="library_container"
+    <div
+      className={`library-container ${showLibrary ? "show" : ""}`}
+      // className="library-container"
     >
       <div className="library-header">
         <h2>Library</h2>
@@ -58,7 +54,7 @@ const closeLibraryHandler = () => {
           </div>
         );
       })}
-    </motion.div>
+    </div>
   );
 }
 
